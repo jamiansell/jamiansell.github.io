@@ -1,2 +1,7 @@
-h1 Jami Ansell.
+ Jami Ansell.
 h3 A site built using Harp to learn and play with new tools, published using GitHub.
+
+ul
+    each article, slug in public.articles.data
+        li
+            a(href="/blog/#{ slug }") #{ article.title }
